@@ -43,25 +43,28 @@ export default function Homepage() {
   });
 
   return (
-    <Layout>
-      <Suspense>
-        <SeoForHomepage />
-      </Suspense>
-      {primaryHero && (
-        <Hero {...primaryHero} height="full" top loading="eager" />
-      )}
-      <ProductSwimlane
-        data={featuredProducts.nodes}
-        title="Featured Products"
-        divider="bottom"
-      />
-      {secondaryHero && <Hero {...secondaryHero} />}
-      <FeaturedCollections
-        data={featuredCollections.nodes}
-        title="Collections"
-      />
-      {tertiaryHero && <Hero {...tertiaryHero} />}
-    </Layout>
+    // <Layout>
+    //   <Suspense>
+    //     <SeoForHomepage />
+    //   </Suspense>
+    //   {primaryHero && (
+    //     <Hero {...primaryHero} height="full" top loading="eager" />
+    //   )}
+    //   <ProductSwimlane
+    //     data={featuredProducts.nodes}
+    //     title="Featured Products"
+    //     divider="bottom"
+    //   />
+    //   {secondaryHero && <Hero {...secondaryHero} />}
+    //   <FeaturedCollections
+    //     data={featuredCollections.nodes}
+    //     title="Collections"
+    //   />
+    //   {tertiaryHero && <Hero {...tertiaryHero} />}
+    // </Layout>
+    <div>
+      ini halaman home
+    </div>
   );
 }
 
